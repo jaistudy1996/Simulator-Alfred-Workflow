@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3BF110FB22655AC8007D00AD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF110FA22655AC8007D00AD /* main.swift */; };
 		3BF1110222655AD7007D00AD /* AlfredOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1110122655AD7007D00AD /* AlfredOutput.swift */; };
+		3BF1110422655B40007D00AD /* TerminalCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1110322655B40007D00AD /* TerminalCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		3BF110F722655AC8007D00AD /* Simulator-Alfred */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Simulator-Alfred"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF110FA22655AC8007D00AD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3BF1110122655AD7007D00AD /* AlfredOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfredOutput.swift; sourceTree = "<group>"; };
+		3BF1110322655B40007D00AD /* TerminalCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				3BF110FA22655AC8007D00AD /* main.swift */,
 				3BF1110122655AD7007D00AD /* AlfredOutput.swift */,
+				3BF1110322655B40007D00AD /* TerminalCommand.swift */,
 			);
 			path = "Simulator-Alfred";
 			sourceTree = "<group>";
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BF1110222655AD7007D00AD /* AlfredOutput.swift in Sources */,
+				3BF1110422655B40007D00AD /* TerminalCommand.swift in Sources */,
 				3BF110FB22655AC8007D00AD /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
