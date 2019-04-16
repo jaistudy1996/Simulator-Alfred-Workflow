@@ -10,6 +10,9 @@
 		3BF110FB22655AC8007D00AD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF110FA22655AC8007D00AD /* main.swift */; };
 		3BF1110222655AD7007D00AD /* AlfredOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1110122655AD7007D00AD /* AlfredOutput.swift */; };
 		3BF1110422655B40007D00AD /* TerminalCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1110322655B40007D00AD /* TerminalCommand.swift */; };
+		3BF1110622655BDD007D00AD /* SimulatorDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1110522655BDD007D00AD /* SimulatorDevice.swift */; };
+		3BF1110822655C19007D00AD /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1110722655C19007D00AD /* FileManager+Extensions.swift */; };
+		3BF1110A22655C4D007D00AD /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1110922655C4D007D00AD /* Application.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +32,9 @@
 		3BF110FA22655AC8007D00AD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3BF1110122655AD7007D00AD /* AlfredOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfredOutput.swift; sourceTree = "<group>"; };
 		3BF1110322655B40007D00AD /* TerminalCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalCommand.swift; sourceTree = "<group>"; };
+		3BF1110522655BDD007D00AD /* SimulatorDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorDevice.swift; sourceTree = "<group>"; };
+		3BF1110722655C19007D00AD /* FileManager+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extensions.swift"; sourceTree = "<group>"; };
+		3BF1110922655C4D007D00AD /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,9 @@
 				3BF110FA22655AC8007D00AD /* main.swift */,
 				3BF1110122655AD7007D00AD /* AlfredOutput.swift */,
 				3BF1110322655B40007D00AD /* TerminalCommand.swift */,
+				3BF1110522655BDD007D00AD /* SimulatorDevice.swift */,
+				3BF1110722655C19007D00AD /* FileManager+Extensions.swift */,
+				3BF1110922655C4D007D00AD /* Application.swift */,
 			);
 			path = "Simulator-Alfred";
 			sourceTree = "<group>";
@@ -125,7 +134,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF1110A22655C4D007D00AD /* Application.swift in Sources */,
+				3BF1110622655BDD007D00AD /* SimulatorDevice.swift in Sources */,
 				3BF1110222655AD7007D00AD /* AlfredOutput.swift in Sources */,
+				3BF1110822655C19007D00AD /* FileManager+Extensions.swift in Sources */,
 				3BF1110422655B40007D00AD /* TerminalCommand.swift in Sources */,
 				3BF110FB22655AC8007D00AD /* main.swift in Sources */,
 			);
