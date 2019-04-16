@@ -13,6 +13,7 @@
 		3BF1110622655BDD007D00AD /* SimulatorDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1110522655BDD007D00AD /* SimulatorDevice.swift */; };
 		3BF1110822655C19007D00AD /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1110722655C19007D00AD /* FileManager+Extensions.swift */; };
 		3BF1110A22655C4D007D00AD /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1110922655C4D007D00AD /* Application.swift */; };
+		3BF1110C22655ED9007D00AD /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1110B22655ED9007D00AD /* Array+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		3BF1110522655BDD007D00AD /* SimulatorDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorDevice.swift; sourceTree = "<group>"; };
 		3BF1110722655C19007D00AD /* FileManager+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extensions.swift"; sourceTree = "<group>"; };
 		3BF1110922655C4D007D00AD /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		3BF1110B22655ED9007D00AD /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				3BF1110522655BDD007D00AD /* SimulatorDevice.swift */,
 				3BF1110722655C19007D00AD /* FileManager+Extensions.swift */,
 				3BF1110922655C4D007D00AD /* Application.swift */,
+				3BF1110B22655ED9007D00AD /* Array+Extensions.swift */,
 			);
 			path = "Simulator-Alfred";
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 				3BF1110A22655C4D007D00AD /* Application.swift in Sources */,
 				3BF1110622655BDD007D00AD /* SimulatorDevice.swift in Sources */,
 				3BF1110222655AD7007D00AD /* AlfredOutput.swift in Sources */,
+				3BF1110C22655ED9007D00AD /* Array+Extensions.swift in Sources */,
 				3BF1110822655C19007D00AD /* FileManager+Extensions.swift in Sources */,
 				3BF1110422655B40007D00AD /* TerminalCommand.swift in Sources */,
 				3BF110FB22655AC8007D00AD /* main.swift in Sources */,
