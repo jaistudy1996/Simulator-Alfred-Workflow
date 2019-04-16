@@ -21,8 +21,8 @@ struct AlfredOutput: Codable {
     }
     
     struct Icon: Codable {
-        let type: String
-        let path: String
+        let type: String?
+        let path: String?
     }
     
     var jsonString: String {

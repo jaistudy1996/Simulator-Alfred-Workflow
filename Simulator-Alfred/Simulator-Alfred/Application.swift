@@ -11,7 +11,7 @@ import Foundation
 
 struct Application {
     let name: String
-    let icon: NSImage?
+    let icon: URL?
     let bundleIdentifier: String?
     let version: String
     let devicePath: URL
@@ -40,7 +40,7 @@ struct Application {
             else { return nil }
         
         name = appInfo.CFBundleDisplayName ?? appInfo.CFBundleName ?? "No Name found"
-        icon = appInfo.CFBundleIcons?.first.flatMap { NSImage(contentsOf: appPath.appendingPathComponent("\($0.value.CFBundleIconFiles.first ?? "")@3x.png")) }
+        icon = appInfo.CFBundleIcons?.first.flatMap { appPath.appendingPathComponent("\($0.value.CFBundleIconFiles.first ?? "")@3x.png") }
         bundleIdentifier = appInfo.CFBundleIdentifier
         version = appInfo.CFBundleShortVersionString
     }
@@ -88,7 +88,7 @@ struct Application {
                                           title: $0.name,
                                           subtitle: $0.bundleIdentifier ?? "",
                                           arg: $0.dataPath?.path ?? "",
-                                          icon: nil,
+                                          icon: AlfredOutput.Icon(type: nil, path: $0.icon?.path),
                                           valid: $0.dataPath != nil)
         }
 
