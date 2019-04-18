@@ -16,6 +16,8 @@ struct Device: Codable {
     let name: String
     let udid: String
     let availabilityError: String
+
+    var osInformation: String? // to be set manually
     
     var location: URL {
         return FileManager.devicesFolderPath.appendingPathComponent(udid)
@@ -44,7 +46,19 @@ struct Device: Codable {
             case .success(let output):
                 let jsonDecoder = JSONDecoder()
                 let all = try! jsonDecoder.decode(XcrunResult.self, from: output)
-                devices = all.devices.filter { $0.key.contains("iOS") }.flatMap { $0.value }
+
+                all.devices.performClosure(matching: { key, _ -> Bool in
+                    key.contains("iOS")
+                }, { key, value in
+                    let osInformation = key.components(separatedBy: ".").last ?? "iOS"
+                    print(osInformation)
+                    devices.append(contentsOf: value.map { dev in
+                        var dev = dev
+                        dev.osInformation = osInformation
+                        return dev
+                    })
+                })
+
             case .failure(let error):
                 print(error)
             }
@@ -57,7 +71,7 @@ struct Device: Codable {
         
         let outputItems = devices.map {
             AlfredOutput.AlfredOutputItem(uid: $0.udid,
-                                          title: $0.name,
+                                          title: "\($0.name) \($0.osInformation ?? "iOS")",
                                           subtitle: $0.state,
                                           arg: $0.location.path,
                                           icon: nil,

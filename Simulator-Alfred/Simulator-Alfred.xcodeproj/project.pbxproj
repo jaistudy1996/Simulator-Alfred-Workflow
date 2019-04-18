@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B10A4DE22690A6E001F13D3 /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B10A4DD22690A6E001F13D3 /* Dictionary+Extensions.swift */; };
 		3BF110FB22655AC8007D00AD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF110FA22655AC8007D00AD /* main.swift */; };
 		3BF1110222655AD7007D00AD /* AlfredOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1110122655AD7007D00AD /* AlfredOutput.swift */; };
 		3BF1110422655B40007D00AD /* TerminalCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1110322655B40007D00AD /* TerminalCommand.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B10A4DD22690A6E001F13D3 /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
 		3BF110F722655AC8007D00AD /* Simulator-Alfred */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Simulator-Alfred"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF110FA22655AC8007D00AD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3BF1110122655AD7007D00AD /* AlfredOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfredOutput.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				3BF1110722655C19007D00AD /* FileManager+Extensions.swift */,
 				3BF1110922655C4D007D00AD /* Application.swift */,
 				3BF1110B22655ED9007D00AD /* Array+Extensions.swift */,
+				3B10A4DD22690A6E001F13D3 /* Dictionary+Extensions.swift */,
 			);
 			path = "Simulator-Alfred";
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				3BF1110822655C19007D00AD /* FileManager+Extensions.swift in Sources */,
 				3BF1110422655B40007D00AD /* TerminalCommand.swift in Sources */,
 				3BF110FB22655AC8007D00AD /* main.swift in Sources */,
+				3B10A4DE22690A6E001F13D3 /* Dictionary+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
