@@ -51,7 +51,6 @@ struct Device: Codable {
                     key.contains("iOS")
                 }, { key, value in
                     let osInformation = key.components(separatedBy: ".").last ?? "iOS"
-                    print(osInformation)
                     devices.append(contentsOf: value.map { dev in
                         var dev = dev
                         dev.osInformation = osInformation
